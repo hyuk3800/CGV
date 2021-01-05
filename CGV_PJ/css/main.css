@@ -1,0 +1,125 @@
+@charset"utf-8";
+/*
+@charset은  외부 css의 언어인코딩 설정임(필수)
+"utf-8"은 2바이트문자도 꺠짐없이 인코딩 설정
+*/
+
+
+/*CDN방식 웹폰트*/
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Jua&display=swap');
+/*
+    font-family: 'Cute Font', cursive;
+    font-family: 'Jua', sans-serif;
+*/
+
+/*
+@import url(경로)
+    -다른 외부 css를 불러와서 합치는 방식(merging머징)
+    -CSS 상단에 코딩한다.(@charset 아래)
+    -link방식에 비해 효율성이 좋아짐.
+*/
+
+html,body,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+/*전체 배경색*/
+
+body{
+    /*검정색 배경*/
+    background-color: #000;
+    /*흰색 글씨*/
+color:#fff;
+    
+}
+
+/*공통 레이아웃 클래스*/
+
+.part{
+    width: 1200px;
+    margin: 0 auto;
+    outline: 3px solid red;
+    
+}
+
+/*각 영역 레ㅐ이아웃*/
+/*상단 영역*/
+#top{
+    height: 80px;
+    /*부모자격*/
+    position: relative;
+}
+
+/*b 매닝*/
+#cont{
+    height: 788px;
+}
+
+/*하단 영역*/
+
+#info{
+    height: 100px;
+    
+}
+
+
+/*전체타이틀 구성*/
+
+.tit{
+    height: 100%;
+    text-align: center;
+    font-family: 'Jua';
+    font-size: 40px;
+    line-height: 80px;
+    color: aquamarine;
+    /*x y blur color*/
+    text-shadow: 0 0 10px aquamarine;
+}
+
+/*2. gmb 메뉴 */
+
+.gnb{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    /*나의 부모> #top
+        #top에 부모자격을 줌
+        부모자격은 static이 아니면 됨! 기존디자인을 해치지 않는 포지션은 relative가 주로 사용됨
+    */
+}
+
+.gnb ul{
+        /*3無*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     outline: 2px solid red;
+    /*플롯된 자식의 높이값인식*/
+    /*가상요소 clear:both*/
+}
+.gnb ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.gnb ul li{
+ float: left;
+    padding: 0 10px;
+}
+
+.gnb ul li a{
+    /*글자색과 밑줄은 a요소에서 변경해줘야함*/
+    color: #fff;
+    text-decoration: none;
+    
+    font-family: 'Jua';
+    font-size: 16px;
+        
+}
+
+
+
+

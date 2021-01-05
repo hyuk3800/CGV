@@ -1,0 +1,72 @@
+@charset"urt-8"
+    
+    html,body{
+        margin: 0;
+        padding: 0;
+        
+}
+
+/*CDN방식 웹폰트*/
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Jua&display=swap');
+/*
+    font-family: 'Cute Font', cursive;
+    font-family: 'Jua', sans-serif;
+*/
+
+
+
+
+
+body{
+    /*배경색*/
+    background-color: #000;
+    /*글자 색*/
+    color: #fff;
+    
+}
+
+/*@@@@@@@@@@@@공통 레이아웃@@@@@@@@@@@@@@*/
+
+.part{
+    width: 1200px;
+    margin: 0 auto;
+    outline: 3px solid red;
+}
+
+
+/*상단 전체*/
+#top{
+    
+    height: 80px;
+}
+
+/*메인*/
+#con{
+    height: 788px;
+    
+}
+
+/*하단 영역*/
+
+#info{
+    height: 100px;
+    
+}
+
+
+
+
+
+
+
+
+/*@@@@@@@@@상단 타이틀@@@@@@@@@@*/
+.tit{
+    text-align: center;
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+    font-size: 60px;
+    font-family: 'Cute Font';
+    line-height: 80px;
+    
+}

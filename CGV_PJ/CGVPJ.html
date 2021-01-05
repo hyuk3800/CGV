@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GCV PJ</title>
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+    
+    
+    
+    <!--[ html 에이아웃 요소들 ]
+    
+    테그오소의 의미를 부여하여 레이아웃을 정의함
+    -의미를 부여한것을 시멘틱이라고 함
+    -시멘틱 요소는 의미가 있는 요소를 말한다.
+    -검색엔진이 데이터를 수집할때 (크롤링 할떄)
+    시멘틱 요소로 분석이 가능하다.
+    좀더 분석적이고 정교한 내용분류를 해서
+    검색내용이 구체적이 될수있다.
+    예) 호텔사이트의 주요한 네비게이션을 분석한다고 할때 호텔 사이트 분류의 nav 태그를 수집하여 분석한다.
+    
+    
+    <header>-문자 또는 섹션의 헤더를 정의합니다.
+    <nav> 탐색문서 링크 세트 정의
+    <section> 문거의 색션을 정의
+    <article> 독립적이고 독립적인 정의 
+    <aside>- 콘텐츠 이외의 콘텐츠 정의
+    (예: 사이드바)
+    <footer> 문서또는 섹션의 바닥 글을 정의합니다.
+    <main> 문서의 중요컨텐츠를 정의
+    (주의 : 한문서 안에 단 한번만 사용)
+    <hgroup> h1 부터 h6까지 머릿글 태그를 묶어주는 콘텐츠를 정의
+    -->
+    
+    <!--A. 상단 영역-->
+<header id="top" class="part">
+    <!--1.로고 -->
+    <h1 id="logo" class="tit">CGV 예고편 상영관</h1>
+    <!--2. 전체 메뉴(GNB)-->
+    <nav class="gnb">
+        <ul>
+            <li><a href="">영화</a></li>
+            <li><a href="">예매</a></li>
+            <li><a href="">극장</a></li>
+            <li><a href="">이벤트&amp;컬쳐</a></li>
+        </ul>
+        
+    </nav>
+    <!--html문서에 특수문자 출력하기 
+        & 엠퍼센트 -> &amp;
+        < 여는꺽쇠 -> &lt;
+        > 닫는꺽쇠 -> &gt;
+        공백 -> &nbsp;
+        그밖에 특수문자를 문자표에서 선택하여 넣는 방법도 있음
+         -->
+    
+    
+</header>
+<!--B. 메인 영역-->
+<main id="cont" class="part">
+    <!--3.스크린-->
+    <div id="screen">
+    <iframe id="ifr" src="https://www.youtube.com/embed/2hnkUpo_2yg?autoplay=1"></iframe>
+    </div>
+<!--4.영화 선택 메뉴 -->    
+    <nav>
+        <ul>
+            <li><img src="images/m1.jpg" alt="작은아씨들"></li>
+            <li><img src="images/m2.jpg" alt="1917"></li>
+            <li><img src="images/m3.jpg" alt="정직한후보"></li>
+            <li><img src="images/m4.jpg" alt="기생충"></li>
+            <li><img src="images/m5.jpg" alt="다크임티스"></li>
+            <li><img src="images/m6.jpg" alt="울프콜"></li>
+        </ul>
+    </nav>
+</main>
+
+
+
+<!--C. 하단 영역-->
+
+<footer id="info" class="part">
+    <!--5. 하단 로고-->
+    <!--6. 회사정보-->
+    <!--7. SNS 아이콘-->
+    
+    
+</footer>
+    
+    
+    
+</body>
+
+</html>
